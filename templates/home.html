@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Hate speech</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="text/html" href="about.html">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+<style type="text/css">
+
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.col-12.col-sm-6{
+	display: flex;
+	flex-wrap: wrap;
+	font-family: sans-serif;
+}
+
+body{
+    background: radial-gradient(#fff,#ffd6d6);
+}
+
+.centered{
+    text-align: center;
+    margin-top:3%;
+}
+
+.nav-item:hover
+{
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+/* Text between <hr> tag */
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+    }
+
+
+    .vl {
+        border-left: 6px solid green;
+        height: 40vh;
+      }
+
+.footer{
+    background-color: #333;
+}
+
+
+.neon {
+  /* width: 400px;
+  height: 80px; */
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  color: pink;
+  font: 60px 'Poiret One', cursive;
+  text-shadow: 0px 0px 10px #50272e, 2px 2px 4px #212121;
+}
+
+
+
+/* styling search */
+
+
+
+    .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+
+
+ 
+ @media screen and (max-width: 600px) 
+ 
+  {
+    .vl{
+        display:none;
+    }
+    
+    
+    .req{
+        margin-top: -35%;
+    }
+
+    .neon{
+      margin-top:-18%;
+    }
+/* styling search */
+
+
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+
+      }
+
+</style>
+</head>
+<body>
+  <div class="home">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><img src="/static/img/logo.png" style="width: 80px;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto mr-5">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home"><b class="text-danger">Home</b></span></a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link active" href="about.html"><b class="text-danger">About</b></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-6">
+          <img class="img-fluid" src="/static/img/twitterwall-removebg-preview.png" style="height: 400px; width: 700px !important;">
+        </div>
+        <div class="col-12 col-md-6">
+            <h1 class="neon" style="color: black;font-family: helvetica !important;"> Hate Speech Detector...!</h1>
+        </div>
+    </div>
+</div>
+
+
+<div class="container h-100">     
+    <div class="d-flex justify-content-center h-100">
+      <form role="form" id="form-buscar" action = "http://localhost:5000/" method = "post">
+        <div class="searchbar">
+          <input id="1" class="search_input" autocomplete="off" type="text" name="search" placeholder="Search..." required/>
+           <a href="#"  type="submit" class="search_icon"> <i class="fa fa-search" aria-hidden="true"></i></a>
+        </div>
+      </form>
+    </div>            
+</div>
+</div>
+</body>
+</html>
+
+

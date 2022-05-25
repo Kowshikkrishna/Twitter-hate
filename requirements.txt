@@ -1,9 +1,8 @@
-gunicorn==19.0.0
 Flask==2.1.1
 jupyterlab-widgets==1.1.0
 Mako==1.2.0
 nltk==3.7
-numba==0.55.0
+numba==0.54.1
 opencv-contrib-python==4.5.5.64
 patsy==0.5.2
 plac==1.1.3
