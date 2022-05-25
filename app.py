@@ -2,7 +2,7 @@ from unicodedata import name
 from flask import Flask, render_template, request, redirect, url_for,current_app
 from joblib import load
 from get_tweets import get_related_tweets
-
+from os import environ
 
 pipeline = load("text_classification.joblib")
 
@@ -57,4 +57,4 @@ def success(name):
     return render_template('result.html', pred=pred, data=data, key = name, n = n, tweet_id = tweet_id)
 
 if __name__ == '__main__' :
-    app.run()
+    app.run(host= '0.0.0.0',environ.get('PORT'))
