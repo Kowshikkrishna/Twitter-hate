@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, redirect, url_for
+from unicodedata import name
+from flask import Flask, render_template, request, redirect, url_for,current_app
 from joblib import load
 from get_tweets import get_related_tweets
 
@@ -34,9 +35,13 @@ def about(about):
 
 @app.route('/', methods=['POST', 'GET'])
 def get_data():
+    # print(current_app.root_path)
     if request.method == 'POST':
         user = request.form['search']
-        return redirect(url_for('success', name=user))
+        if(request.url_root == "https://twitter-hate.herokuapp.com/"):
+            return redirect('https://twitter-hate.herokuapp.com/success',name)
+        else:
+            return redirect(url_for('success', name=user))
 
 
 @app.route('/success/<name>')
