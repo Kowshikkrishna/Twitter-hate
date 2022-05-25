@@ -40,15 +40,13 @@ def get_data():
         user = request.form['search']
         # redirectString = "https://twitter-hate.herokuapp.com/"+"success/"+user
         # return redirect(redirectString)
-        return redirect(url_for('success', name=user ,_external=True))
+        return redirect(url_for('success', name=user ))
 
         # if(request.url_root == "http://localhost:5000/--"):
         #     return redirect(url_for('success', name=user ,_external=True))
         # else:
         #     redirectString = "https://twitter-hate.herokuapp.com/"+"success/"+user
         #     return redirect(redirectString)  
-
-
 @app.route('/success/<name>')
 def success(name):
     res = requestResults(name)
