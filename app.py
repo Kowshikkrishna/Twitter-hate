@@ -38,14 +38,15 @@ def get_data():
     # print(current_app.root_path)
     if request.method == 'POST':
         user = request.form['search']
-        redirectString = "https://twitter-hate.herokuapp.com/"+"success/"+user
-        return redirect(redirectString) 
-        
+        # redirectString = "https://twitter-hate.herokuapp.com/"+"success/"+user
+        # return redirect(redirectString)
+        return redirect(url_for('success', name=user ,_external=True))
+
         # if(request.url_root == "http://localhost:5000/--"):
-        #     return redirect(url_for('success', name=user))
+        #     return redirect(url_for('success', name=user ,_external=True))
         # else:
-            # redirectString = "https://twitter-hate.herokuapp.com/"+"success/"+user
-            # return redirect(redirectString)  
+        #     redirectString = "https://twitter-hate.herokuapp.com/"+"success/"+user
+        #     return redirect(redirectString)  
 
 
 @app.route('/success/<name>')
