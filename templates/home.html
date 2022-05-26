@@ -38,7 +38,7 @@
 }
 
 body{
-    background: radial-gradient(#fff,#ffd6d6);
+    background: radial-gradient(#fff,#1a1a1a);
 }
 
 .centered{
@@ -48,7 +48,7 @@ body{
 
 .nav-item:hover
 {
-    background-color: yellow;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -83,7 +83,7 @@ hr.style-one {
   padding: 10px;
   color: pink;
   font: 60px 'Poiret One', cursive;
-  text-shadow: 0px 0px 10px #50272e, 2px 2px 4px #212121;
+  text-shadow: 0px 0px 10px rgb(126, 126, 126), 2px 2px 4px #212121;
 }
 
 
@@ -115,13 +115,13 @@ hr.style-one {
     .searchbar:hover > .search_input{
     padding: 0 10px;
     width: 450px;
-    caret-color:red;
+    caret-color:rgb(30, 30, 30);
     transition: width 0.4s linear;
     }
 
     .searchbar:hover > .search_icon{
     background: white;
-    color: #e74c3c;
+    color: #353b48;
     }
 
     .search_icon{
@@ -157,7 +157,16 @@ hr.style-one {
 /* styling search */
 
 
-
+@media all and (min-width: 300px) and (max-width: 500px){
+  .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+}
 .searchbar{
     margin-bottom: auto;
     margin-top: auto;
@@ -177,17 +186,17 @@ hr.style-one {
     line-height: 40px;
     transition: width 0.4s linear;
     }
-
+    
     .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 450px;
-    caret-color:red;
+    width: 400px;
+    caret-color:rgb(0, 0, 0);
     transition: width 0.4s linear;
     }
 
     .searchbar:hover > .search_icon{
     background: white;
-    color: #e74c3c;
+    color: #1d1d1d;
     }
 
     .search_icon{
@@ -217,10 +226,10 @@ hr.style-one {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto mr-5">
         <li class="nav-item active">
-          <a class="nav-link" href="/home"><b class="text-danger">Home</b></span></a>
+          <a class="nav-link" href="/home"><b class="text-secondary">Home</b></span></a>
         </li>
            <li class="nav-item">
-          <a class="nav-link active" href="about.html"><b class="text-danger">About</b></a>
+          <a class="nav-link active" href="about.html"><b class="text-secondary">About</b></a>
         </li>
       </ul>
     </div>
